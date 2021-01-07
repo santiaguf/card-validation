@@ -88,8 +88,7 @@ como tecnologías.
 
 ## 4. Consideraciones generales
 
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
+* El proyecto es individual. Recuerda que cada una aprende a diferente ritmo.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
   te preocupes, lo aprenderás durante este proyecto.
