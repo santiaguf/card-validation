@@ -24,7 +24,11 @@ par se les debe multiplicar por dos, si este número es mayor o igual a 10,
 debemos sumar los dígitos del resultado; el número a verificar será válido si
 la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+A continuación un [video](https://www.youtube.com/watch?v=f0zL6Ot9y_w) de Michelle que te lleva a través del algoritmo de Luhn
+y un par de cosas más que debes saber para resolver este proyecto. ¡Escúchala
+con detenimiento y sigue sus consejos! :)
+
+[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
 
 ## 2. Resumen del proyecto
 
@@ -40,7 +44,7 @@ etc.
 
 ## 3. Objetivos de aprendizaje
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
+Aprenderán a construir una aplicación web que interactuará 
 con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
 como tecnologías.
 
@@ -236,7 +240,7 @@ mínimo del 50% de _branches_ (ramas).
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
    condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
+   [VSCode](https://code.visualstudio.com/).
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
    [UNIX Shell](../../topics/shell),
    que es un programita que interpreta líneas de comando (command-line
@@ -246,14 +250,11 @@ mínimo del 50% de _branches_ (ramas).
    también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
    que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
    10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Una de las integrantes del equipo debe realizar un :fork_and_knife:
+3. Debes realizar un :fork_and_knife:
    [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
    tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
+   en ese repo.
+4. Despues de realizar el fork, y ya lo tienes como repo en tu propio cuenta github, :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu *fork* a tu computadora (copia local).
 5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
    asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
@@ -266,15 +267,7 @@ mínimo del 50% de _branches_ (ramas).
 
 ### Recursos y temas relacionados
 
-A continuación un video de Michelle que te lleva a través del algoritmo de Luhn
-y un par de cosas más que debes saber para resolver este proyecto. ¡Escúchala
-con detenimiento y sigue sus consejos! :)
-
-[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
-
-[Link](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
-
-También una metodología para empezar a desarrollar tareas con JavaScript:
+Metodología para empezar a desarrollar tareas con JavaScript:
 
 [![Resolución de problemas con JavaScript](http://i3.ytimg.com/vi/lYfEmhLmu7A/hqdefault.jpg)](https://www.youtube.com/watch?v=lYfEmhLmu7A)
 
