@@ -48,6 +48,8 @@ Aprenderán a construir una aplicación web que interactuará
 con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
 como tecnologías.
 
+_No olvides a pensar en tu plan de acción - los objetivos que vas a prioritizar - y agrega tu plan en el README._
+
 ### HTML y CSS
 
 * [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
@@ -152,6 +154,7 @@ Debe contener lo siguiente:
   3. Luego colocarás la foto de tu primer prototipo en papel.
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
   5. Imagen del prototipo final.
+* Tu plan de acción - los Objetivos de Aprendizaje que vas a prioritizar.
 
 #### Visualmente (HTML y CSS)
 
