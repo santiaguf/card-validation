@@ -14,6 +14,15 @@ La Conmebol ha pensado en ello y ha habilitado un sitio web para ver los partido
 
 - **Prototipo en Papel** (baja fidelidad)
 
+Version Desktop:
+
+![TRIVIADesktop](img/desktop.jpeg)
+
+Version Mobile:
+
+![TRIVIAMobile1](img/mobile1.jpeg)
+![TRIVIAMobile2](img/mobile2.jpeg)
+
 - Feedback recibido:
 
 - **Prototipo en Figma** (alta fidelidad)
