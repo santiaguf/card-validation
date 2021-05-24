@@ -28,6 +28,8 @@ Version Mobile:
 - **Prototipo en Figma** (alta fidelidad)
 
 ![CardFigma](img/card-validation-v1.png)
+
+
 [Prototipo en Figma.](https://www.figma.com/file/ZrlRQHD2GwCJHzdsrvJIl8/Card-validation?node-id=0%3A1)
 
 ## 3. plan de acción
