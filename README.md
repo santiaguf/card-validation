@@ -16,17 +16,19 @@ La Conmebol ha pensado en ello y ha habilitado un sitio web para ver los partido
 
 Version Desktop:
 
-![TRIVIADesktop](img/desktop.jpeg)
+![CardDesktop](img/desktop.jpeg)
 
 Version Mobile:
 
-![TRIVIAMobile1](img/mobile1.jpeg)
-![TRIVIAMobile2](img/mobile2.jpeg)
+![CardMobile1](img/mobile1.jpeg)
+![CardMobile2](img/mobile2.jpeg)
 
-- Feedback recibido:
+- Feedback recibido: mi compañera Eliana, me indicó que podría pedirse sólo el número de la tarjeta y luego si es válida, pedir los demás datos: nombre completo, email, celular, fecha de vencimiento y código seguridad. de acuerdo a esto se diseñó el siguiente prototipo en figma en alta fidelidad
 
 - **Prototipo en Figma** (alta fidelidad)
 
+![CardFigma](img/card-validation-v1.png)
+[Prototipo en Figma.](https://www.figma.com/file/ZrlRQHD2GwCJHzdsrvJIl8/Card-validation?node-id=0%3A1)
 
 ## 3. plan de acción
 
