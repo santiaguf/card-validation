@@ -5,20 +5,33 @@ const isValid = (number) => {
   let sum = 0;
   let count = 1;
   inversedArray.forEach(function (digit){
-    count %2 === 0 ? sum+= pairsum(digit) : sum+= digit;
+    count %2 === 0 ? sum+= pairSum(digit) : sum+= digit;
     count++;
   });
 
   return sum%10 === 0;
 };
 
-const pairsum = (number) => {
+const pairSum = (number) => {
   const operation = number*2;
   return operation > 9 ? (1+(2*(number-5))): operation;
 }
 
-const maskify = () =>  {
-  return "is valid";
-}
+const maskify = (string) => {
 
-export {isValid, maskify};
+  const newArray = isNaN(string) ?  Array.from(String(string)) : Array.from(String(string), Number)
+  const arrayLength = newArray.length;
+
+  if(arrayLength > 4){
+    const maskedItems = arrayLength - 4;
+
+    for(let i= 0; i<maskedItems; i++){
+      newArray[i] = "#";
+    }
+
+    return newArray.join("");
+  }
+  return string;
+};
+
+export {isValid, maskify, pairSum};

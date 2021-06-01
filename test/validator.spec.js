@@ -29,16 +29,35 @@ describe('validator', () => {
       expect(typeof validator.maskify).toBe('function');
     });
 
-    it.skip('Debería retornar "############5616" para "4556364607935616"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "############5616" para "4556364607935616"', () => {
+      expect(validator.maskify(4556364607935616)).toBe("############5616");
     });
 
-    it.skip('Debería retornar "1" para "1"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "1" para "1"', () => {
+      expect(validator.maskify(1)).toBe(1);
     });
 
-    it.skip('Debería retornar "######orld" para "helloworld"', () => {
-      // escribe aquí tu test
+    it('Debería retornar "######orld" para "helloworld"', () => {
+      expect(validator.maskify("helloworld")).toBe("######orld");
     });
+  });
+
+  describe('validator.pairSum', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.pairSum).toBe('function');
+    });
+
+    it('Debería retornar "6" para "3"', () => {
+      expect(validator.pairSum(3)).toBe(6);
+    });
+
+    it('Debería retornar "3" para "6"', () => {
+      expect(validator.pairSum(6)).toBe(3);
+    });
+
+    it('Debería retornar "7" para "8"', () => {
+      expect(validator.pairSum(8)).toBe(7);
+    });
+
   });
 });
