@@ -1,5 +1,5 @@
 // importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
-import * as validator from '../src/validator.js';
+import validator from '../src/validator';
 
 describe('validator', () => {
   it('debería ser un objeto', () => {
@@ -42,7 +42,7 @@ describe('validator', () => {
     });
   });
 
-  describe('validator.pairSum', () => {
+  describe('validator.isValid.pairSum', () => {
     it('debería ser una función', () => {
       expect(typeof validator.pairSum).toBe('function');
     });
