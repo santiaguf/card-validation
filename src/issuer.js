@@ -1,6 +1,6 @@
 const issuer = {
 
-  GetBank(numb) {
+  getBank(numb) {
 
     //source https://stevemorse.org/ssn/cc.html
     // 51-55 mc
@@ -13,8 +13,8 @@ const issuer = {
     // 3     jcb
     // 2131, 1800  jcb
 
-    const invalid = "*** INVALID ***";
-    const undetermined = "enter more digits";
+    const invalid = "*** INVÁLIDA ***";
+    const undetermined = "ingrese más digitos";
 
     const mc = "MasterCard";
     const visa = "Visa";
