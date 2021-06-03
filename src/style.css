@@ -13,8 +13,6 @@ button {
   width: 100%;
   background: #ffd503;
   border-radius: 10px;
-  color: #fff;
-
   font-size: 1.2em;
 }
 
@@ -68,6 +66,10 @@ button {
 
 .blue {
   color: #004985;
+}
+
+.white {
+    color: #fff;
 }
 
 .hide {

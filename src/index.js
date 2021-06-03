@@ -4,23 +4,39 @@ import card from './card.js';
 // create the card
 card.createCard();
 
+const showDiv = (id) => {
+  const element = document.getElementById(id);
+  element.classList.remove('hide');
+}
+
+const hideDiv = (id) => {
+  const element = document.getElementById(id);
+  element.classList.add('hide');
+}
+
 
 const validateCardNumber = () => {
-  const cardNumber = document.getElementById('card-number').value;
-  console.log(validator.isValid(cardNumber));
-  console.log(cardNumber);
 
-  const formValidation = document.getElementById('form-validation');
-  const resultValidation = document.getElementById('result-validation');
-  formValidation.classList.add('hide');
-  resultValidation.classList.remove('hide');
+  const cardNumber = document.getElementById('card-number').value;
+
+  if(cardNumber.length > 11){
+    const isValidCard = validator.isValid(cardNumber) ? 'es una tarjeta válida' : 'no es una tarjeta válida';
+    const maskedCard = validator.maskify(cardNumber);
+    const result = `${maskedCard} ${isValidCard}`;
+
+    const cardHidden = document.getElementById('card-hidden');
+    cardHidden.classList.add('text');
+    cardHidden.textContent = result;
+
+    hideDiv('form-validation');
+    showDiv('result-validation');
+  }
+
 }
 
 const comeBack = () => {
-  const formValidation = document.getElementById('form-validation');
-  const resultValidation = document.getElementById('result-validation');
-  formValidation.classList.remove('hide');
-  resultValidation.classList.add('hide');
+  showDiv('form-validation');
+  hideDiv('result-validation');
 }
 
 const formButton = document.getElementById('validate-button');

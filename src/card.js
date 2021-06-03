@@ -67,7 +67,7 @@ const card = {
     const button = document.createElement('button');
     button.id = 'validate-button';
     button.textContent = 'validar';
-    button.classList.add('text', 'center');
+    button.classList.add('text', 'center', 'white');
     const validateDivEl = document.getElementById('validate-button-container');
     validateDivEl.appendChild(button);
 
@@ -81,7 +81,7 @@ const card = {
     // add card number result
     const cardHiddenDiv =  document.createElement('div');
     cardHiddenDiv.id = 'card-hidden';
-    cardHiddenDiv.classList.add('center');
+    cardHiddenDiv.classList.add('center', 'white');
     resultEl.appendChild(cardHiddenDiv);
 
     // add back button div
