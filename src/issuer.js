@@ -13,7 +13,7 @@ const issuer = {
     // 3     jcb
     // 2131, 1800  jcb
 
-    const invalid = "*** INVÁLIDA ***";
+    const invalid = "INVÁLIDA";
     const undetermined = "ingrese más digitos";
 
     const mc = "MasterCard";
@@ -27,7 +27,8 @@ const issuer = {
 
     let bank = "???";
     let prefix;
-    if (numb.length == 0) { // nothing entered yet
+    numb = numb.toString();
+    if (numb.length === 0) { // nothing entered yet
       bank = "";
     } else if (numb.charAt(0) > 6) { // 1st digit is 7, 8, or 9
       bank = invalid;
