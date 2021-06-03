@@ -18,11 +18,16 @@ const hideDiv = (id) => {
 const validateCardNumber = () => {
 
   const cardNumber = document.getElementById('card-number').value;
+  const validCardText = 'es una tarjeta válida';
+  const invalidCardText = 'NO es una tarjeta válida';
 
   if(cardNumber.length > 11){
-    const isValidCard = validator.isValid(cardNumber) ? 'es una tarjeta válida' : 'no es una tarjeta válida';
+    const isValidCard = validator.isValid(cardNumber) ? validCardText : invalidCardText;
     const maskedCard = validator.maskify(cardNumber);
     const result = `${maskedCard} ${isValidCard}`;
+
+    //show or hide continue button
+    isValidCard === validCardText ? showDiv('next-button'): hideDiv('next-button');
 
     const cardHidden = document.getElementById('card-hidden');
     cardHidden.classList.add('text');

@@ -66,7 +66,7 @@ const card = {
 
     const button = document.createElement('button');
     button.id = 'validate-button';
-    button.textContent = 'validar';
+    button.textContent = 'Validar';
     button.classList.add('text', 'center', 'white');
     const validateDivEl = document.getElementById('validate-button-container');
     validateDivEl.appendChild(button);
@@ -92,11 +92,19 @@ const card = {
 
     const backButtonDivEl = document.getElementById('back-button-container');
 
+    // add back button
     const backButton = document.createElement('button');
     backButton.id = 'back-button';
-    backButton.textContent = 'regresar';
+    backButton.textContent = 'Regresar';
     backButton.classList.add('text', 'center');
     backButtonDivEl.appendChild(backButton);
+
+    // add continue button
+    const nextButton = document.createElement('button');
+    nextButton.id = 'next-button';
+    nextButton.textContent = 'Continuar';
+    nextButton.classList.add('text', 'center', 'hide');
+    backButtonDivEl.appendChild(nextButton);
 
     // add footer
     const footer = document.querySelector('footer');
