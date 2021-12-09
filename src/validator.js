@@ -1,6 +1,6 @@
 const validator = {
 
-   pairSum(number) {
+  pairSum(number) {
     const operation = number*2;
     return operation > 9 ? (1+(2*(number-5))): operation;
   },

@@ -1,26 +1,34 @@
 const card = {
 
-  createCard() {
-    //add main div
+  addMainDiv() {
     const main = document.querySelector('main');
     const mainCard = document.createElement('div');
     mainCard.id = 'main-card';
     main.appendChild(mainCard);
 
-    // add logo
+    return mainCard;
+  },
+
+  addLogo() {
     const mainCardElement = document.getElementById('main-card');
     const cardLogo = document.createElement('div');
     cardLogo.id = 'card-logo';
     mainCardElement.appendChild(cardLogo);
     mainCardElement.classList.add('center');
 
-    //add description
+    return mainCardElement;
+  },
+
+  addDescription(mainCardElement) {
     const cardDesc = document.createElement('div');
     cardDesc.id = 'card-description';
     cardDesc.classList.add('center');
     mainCardElement.appendChild(cardDesc);
 
-    //add promo text
+    return mainCardElement;
+  },
+
+  addPromoText() {
     const descDiv = document.getElementById('card-description');
     const promoText = 'Disfruta todos los partidos de la Copa América 2021 en Streaming por $99 usd ';
     const promoDiv =  document.createElement('div');
@@ -29,21 +37,28 @@ const card = {
     promoDiv.textContent = promoText;
     descDiv.appendChild(promoDiv);
 
-    // add step text
+    return descDiv;
+  },
+
+  addStepText(descDiv) {
     const stepText = 'Paso 1: escríbe el número de tu tarjeta de crédito para continuar ';
     const stepDiv =  document.createElement('div');
     stepDiv.id = 'step-text';
     stepDiv.classList.add('text', 'blue');
     stepDiv.textContent = stepText;
     descDiv.appendChild(stepDiv);
+  },
 
-    // add card validation form
+  addCardForm(mainCardElement) {
     const form = document.createElement('div');
     form.id = 'form-validation';
     mainCardElement.appendChild(form);
     const formEl = document.getElementById('form-validation');
 
-    // add card number inputs
+    return formEl;
+  },
+
+  addCardInput(formEl) {
     const inputDiv =  document.createElement('div');
     inputDiv.id = 'input-container';
     inputDiv.classList.add('center');
@@ -58,7 +73,10 @@ const card = {
     const inputDivEl = document.getElementById('input-container');
     inputDivEl.appendChild(inputEl);
 
-    // add validate button
+    return formEl;
+  },
+
+  addValidateButton(formEl) {
     const validateDiv =  document.createElement('div');
     validateDiv.id = 'validate-button-container';
     validateDiv.classList.add('center');
@@ -70,51 +88,93 @@ const card = {
     button.classList.add('text', 'center', 'white');
     const validateDivEl = document.getElementById('validate-button-container');
     validateDivEl.appendChild(button);
+  },
 
-    // add result validation validation view
+  addResultValidationView(mainCardElement) {
     const result = document.createElement('div');
     result.id = 'result-validation';
     result.classList.add('hide');
     mainCardElement.appendChild(result);
     const resultEl = document.getElementById('result-validation');
 
-    // add card number result
+    return resultEl;
+  },
+
+  addCardNumberResult(resultEl) {
     const cardHiddenDiv =  document.createElement('div');
     cardHiddenDiv.id = 'card-hidden';
     cardHiddenDiv.classList.add('center', 'white');
     resultEl.appendChild(cardHiddenDiv);
 
-    // add back button div
+    return resultEl;
+  },
+
+  addBackButtonDiv (resultEl){
     const backButtonDiv =  document.createElement('div');
     backButtonDiv.id = 'back-button-container';
     backButtonDiv.classList.add('center');
     resultEl.appendChild(backButtonDiv);
+  },
 
-    const backButtonDivEl = document.getElementById('back-button-container');
-
-    // add back button
+  addBackButton(backButtonDivEl) {
     const backButton = document.createElement('button');
     backButton.id = 'back-button';
     backButton.textContent = 'Regresar';
     backButton.classList.add('text', 'center');
     backButtonDivEl.appendChild(backButton);
 
-    // add continue button
+    return backButtonDivEl;
+  },
+
+  addContinueButton (backButtonDiv){
     const nextButton = document.createElement('button');
     nextButton.id = 'next-button';
     nextButton.textContent = 'Continuar';
     nextButton.classList.add('text', 'center', 'hide');
-    backButtonDivEl.appendChild(nextButton);
+    backButtonDiv.appendChild(nextButton);
+  },
 
-    // add footer
+  addFooter(mainCard) {
     const footer = document.querySelector('footer');
     const footerText = document.createElement('span');
     footerText.id = 'footer-text';
     footerText.classList.add('card', 'text');
     footerText.textContent = 'Card Validation © 2021 - todos los derechos reservados';
+    const main = document.querySelector('main');
     main.appendChild(mainCard);
     footer.appendChild(footerText);
     footer.classList.add('center', 'blue');
+  },
+
+  createCard() {
+    const mainCard = card.addMainDiv();
+
+    let mainCardElWithLogo = card.addLogo();
+
+    const mainCardElement = card.addDescription(mainCardElWithLogo);
+
+    const descDivCreated = card.addPromoText();
+
+    card.addStepText(descDivCreated);
+
+    const formElEmpty = card.addCardForm(mainCardElement);
+
+    const formEl = card.addCardInput(formElEmpty);
+
+    card.addValidateButton(formEl);
+
+    const resultElEmpty = card.addResultValidationView(mainCardElement);
+
+    const resultEl = card.addCardNumberResult(resultElEmpty);
+
+    card.addBackButtonDiv(resultEl);
+    const backButtonDivEl = document.getElementById('back-button-container');
+
+    const backButtonDiv = card.addBackButton(backButtonDivEl);
+
+    card.addContinueButton(backButtonDiv);
+
+    card.addFooter(mainCard);
   }
 }
 
