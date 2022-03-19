@@ -13,10 +13,6 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "img/favicon.ico",
-      "type": "image/x-icon"
-    },
-    {
       "src": "img/AppImages/android/android-launchericon-72-72.png",
       "type": "image/png",
       "sizes": "72x72",
