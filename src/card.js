@@ -85,7 +85,7 @@ const card = {
     const button = document.createElement('button');
     button.id = 'validate-button';
     button.textContent = 'Validar';
-    button.classList.add('text', 'center', 'white');
+    button.classList.add('text', 'center');
     const validateDivEl = document.getElementById('validate-button-container');
     validateDivEl.appendChild(button);
   },
