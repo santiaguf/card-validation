@@ -14,6 +14,10 @@ const card = {
     const cardLogo = document.createElement('div');
     cardLogo.id = 'card-logo';
     mainCardElement.appendChild(cardLogo);
+    const logo = document.createElement('img');
+    logo.id = 'img-logo';
+    logo.src = 'img/CA2021-horizontal-logo.png';
+    cardLogo.appendChild(logo);
     mainCardElement.classList.add('center');
 
     return mainCardElement;
