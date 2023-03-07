@@ -17,6 +17,7 @@ const card = {
     const logo = document.createElement('img');
     logo.id = 'img-logo';
     logo.src = 'img/CA2021-horizontal-logo.png';
+    logo.alt = 'logo copa america'
     cardLogo.appendChild(logo);
     mainCardElement.classList.add('center');
 
